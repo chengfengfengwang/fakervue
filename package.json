@@ -1,13 +1,26 @@
 {
-  "name": "hello-world",
-  "version": "0.1.0",
-  "private": true,
+  "name": "fakervue",
+  "version": "0.2.3",
+  "main": "./dist/fakervue.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name fakervue ./src/components/index.js"
   },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "dependencies": {
+    "amfe-flexible": "^2.2.1",
     "core-js": "^2.6.5",
+    "fakervue": "^0.1.0",
+    "mmmy-banner": "^0.1.0",
+    "postcss-pxtorem": "^4.0.1",
+    "qwerbanner": "^0.1.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3"
   },
@@ -16,6 +29,7 @@
     "@vue/cli-service": "^3.6.0",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
+    "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.5.21"
   },
   "postcss": {
