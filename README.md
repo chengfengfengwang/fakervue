@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # test-components
-=======
-# hello-world
->>>>>>> 9a7da3ee8e6d0b3ee4cbda0fb8bda914000e5c35
 
 ## Project setup
 ```
