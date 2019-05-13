@@ -1,12 +1,12 @@
 {
-  "name": "fakervue1",
-  "version": "0.1.5",
+  "name": "fakervue",
+  "version": "0.1.8",
   "private": false,
-  "main":"lib/vcolorpicker.umd.min.js",
+  "main":"lib/fakervue.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib": "vue-cli-service build --target lib --name vcolorpicker --dest lib packages/index.js && npm publish"
+    "lib": "vue-cli-service build --target lib --name fakervue --dest lib packages/index.js && npm publish"
   },
   "dependencies": {
     "core-js": "^2.6.5",
