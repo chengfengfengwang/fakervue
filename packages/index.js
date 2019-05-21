@@ -1,7 +1,7 @@
 // 导入颜色选择器组件
 import Loading from './Loading/Loading.vue'
 import Button from './Button/Button.vue'
-import util from './Common/common'
+import util from './Common/util'
 import './Common/common.css'
 // 存储组件列表
 const components = [

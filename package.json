@@ -1,6 +1,6 @@
 {
   "name": "fakervue",
-  "version": "0.1.8",
+  "version": "0.5.3",
   "private": false,
   "main":"lib/fakervue.umd.min.js",
   "scripts": {

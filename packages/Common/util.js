@@ -65,9 +65,22 @@ function setRem() {
         document.documentElement.style.fontSize = '22px'
     }
 }
-
+function testIsIphonex() {
+    if (typeof window !== "undefined" && window) {
+        return (
+            /iphone/gi.test(window.navigator.userAgent) &&
+            window.screen.height >= 812
+        );
+    }
+    return false;
+}
+function isWebview() {
+    var u = navigator.userAgent;
+    var isWebViewBundle = u.indexOf('immusician') != -1 || u.indexOf('buluobang') != -1 || u.indexOf('bangtabs') != -1 || u.indexOf('musiclass') != -1;
+    return isWebViewBundle
+}
 const util = {
-    dateCount, getQueryVariable, testPlat, formatTime, setRem, formatNumber
+    testIsIphonex, isWebview, dateCount, getQueryVariable, testPlat, formatTime, setRem, formatNumber
 }
 
 export default util
